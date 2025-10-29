@@ -1,5 +1,59 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px 120px;
+}
+
 header {
-    padding: 20px;
+    padding: 20px 40px;
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+header .logo {
+    position: absolute;
+    left: 40px;
+    height: 60px;
+}
+
+header #avatar {
+    position: absolute;
+    right: 40px;
+    height: 60px;
+}
+nav a {
+    text-decoration: none;
+    padding: 15px;
+    gap: 30px;
+    color: #333;
+}
+
+nav {
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#fone { 
+    vertical-align: middle;
+    margin-bottom: 6px;
+}
+
+#link {
+    vertical-align: middle;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+.container-teste {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;         
+    background-color: #FF8B07; 
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
 }
