@@ -4,6 +4,7 @@ body {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    background-color: #f7ede2;
 }
 
 header {
@@ -73,6 +74,9 @@ nav {
     justify-content: center;
 }
 
+.txt-container h2{
+    font-size: 45px;
+}
 .txt-container{
     flex: 1;
     font-size: 1.5em;
