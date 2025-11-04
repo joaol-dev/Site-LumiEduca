@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px 120px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+header {
+    padding: 6px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    position: relative;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+header .logo {
+    height: 60px;
+}
+
+header #avatar {
+    position: absolute;
+    right: 40px;
+    height: 60px;
+}
+nav a {
+    text-decoration: none;
+    padding: 15px;
+    gap: 30px;
+    color: #333;
+}
+
+nav {
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#fone { 
+    vertical-align: middle;
+    margin-bottom: 6px;
+}
+
+#link {
+    vertical-align: middle;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+.container-teste {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;         
+    background-color: #FF8B07; 
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.site-container {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+.img-container{ 
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+
+.txt-container{
+    flex: 1;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.txt-container p{
+    font-size: 1.5em;
+    
+}
+
+.divisoria {
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;        
+    margin-bottom: 20px;  
+    color: gray;    
+}
+
+footer {
+    color: gray;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+    border-top: 1px solid #ccc;
+    padding-top: 20px;        
+    margin-top: 20px; 
+}
