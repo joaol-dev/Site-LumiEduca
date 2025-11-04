@@ -109,3 +109,38 @@ footer {
     padding-top: 20px;        
     margin-top: 20px; 
 }
+
+/* ---------- ESTILOS DOS BOTÕES ---------- */
+
+/* Botões grandes ("Conheça o app" e "Fale conosco") */
+.botao-laranja {
+    background-color: #FF8B07;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    padding: 15px 35px;
+    font-size: 1.2em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.botao-laranja:hover {
+    background-color: #e67600; 
+    transform: scale(1.03); 
+}
+
+/* ---------- MENU SUPERIOR ---------- */
+.botao-menu {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: #333;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.botao-menu:hover {
+    background-color: #FF8B07;
+    color: white;
+}

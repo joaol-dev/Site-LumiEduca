@@ -104,3 +104,18 @@ footer {
     padding-top: 20px;        
     margin-top: 20px; 
 }
+
+/* ---------- MENU SUPERIOR ---------- */
+.botao-menu {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: #333;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.botao-menu:hover {
+    background-color: #FF8B07;
+    color: white;
+}
