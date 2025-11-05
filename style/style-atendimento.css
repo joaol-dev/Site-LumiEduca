@@ -1,0 +1,208 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  background-color: #fff;
+  color: #333;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  border-bottom: 1px solid #eee;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  width: 50px;
+}
+
+.perfil img {
+  width: 40px;
+  border-radius: 50%;
+  background-color: #eee;
+  padding: 5px;
+}
+
+main {
+  padding: 20px 50px;
+}
+
+.filtros {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.filtros h3 {
+  font-size: 16px;
+}
+
+.filtros select {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.pesquisa {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.pesquisa input {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  width: 180px;
+}
+
+.pesquisa button {
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+}
+
+thead {
+  background-color: orange;
+  color: white;
+}
+
+th, td {
+  text-align: left;
+  padding: 12px 15px;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+.painel {
+  position: fixed;
+  top: 0;
+  right: -420px;
+  width: 400px;
+  height: 100%;
+  background-color: #fff;
+  box-shadow: -2px 0 8px rgba(0,0,0,0.2);
+  padding: 20px;
+  transition: right 0.3s ease-in-out;
+  overflow-y: auto;
+  border-radius: 8px 0 0 8px;
+  z-index: 1000;
+}
+
+.painel.ativo {
+  right: 0;
+}
+
+.painel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#fecharPainel {
+  background-color: orange;
+  border: none;
+  color: white;
+  font-size: 18px;
+  border-radius: 6px;
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+}
+
+.status-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 50%;
+  margin-left: 5px;
+}
+
+/* ====== MENSAGENS ====== */
+.mensagens {
+  margin: 10px 0;
+}
+
+.msg {
+  max-width: 85%;
+  padding: 10px 12px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #fff;
+  position: relative;
+}
+
+.msg span {
+  display: block;
+  font-size: 11px;
+  opacity: 0.8;
+  margin-bottom: 4px;
+}
+
+.msg.cliente {
+  background-color: #666;
+  align-self: flex-start;
+  border-radius: 10px 10px 10px 0;
+}
+
+.msg.atendente {
+  background-color: orange;
+  align-self: flex-end;
+  border-radius: 10px 10px 0 10px;
+}
+
+/* ====== CAMPO DE ENTRADA ====== */
+.input-msg {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+}
+
+.input-msg input {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  border-radius: 10px;
+  background-color: #eee;
+}
+
+.input-msg button {
+  background-color: #888;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}

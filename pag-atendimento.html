@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atendimento ao Cliente</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">  
+  <link rel="stylesheet" href="style/style-atendimento.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="img/LogoLumi.png" alt="Logo">
+      <h1>Atendimento ao Cliente</h1>
+    </div>
+    <div class="perfil">
+      <img src="img/Generic avatar.svg" alt="Perfil do usuário">
+    </div>
+  </header>
+
+  <main>
+    <section class="filtros">
+      <h3>Filtros:</h3>
+      <select>
+        <option>Status</option>
+        <option>Aberto</option>
+        <option>Em andamento</option>
+        <option>Resolvido</option>
+      </select>
+
+      <select>
+        <option>Categoria</option>
+        <option>Técnico</option>
+        <option>Financeiro</option>
+        <option>Pedagógico</option>
+      </select>
+
+      <select>
+        <option>Atribuído a</option>
+        <option>João Lucas</option>
+        <option>José Carlos</option>
+        <option>Adriel dos Santos</option>
+        <option>Bryan Duarte</option>
+        <option>Emmanuel Nazareth</option>
+        
+      </select>
+
+      <div class="pesquisa">
+        <input type="text" placeholder="Esqueci a senha">
+        <button>🔍</button>
+      </div>
+    </section>
+
+    <table>
+      <thead>
+        <tr>
+          <th>#ID</th>
+          <th>Título</th>
+          <th>Categoria</th>
+          <th>Status</th>
+          <th>Data</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>#001</td>
+          <td>Problema de login</td>
+          <td>Técnico</td>
+          <td>Aberto</td>
+          <td>12/09 – 09:10</td>
+        </tr>
+        <tr>
+          <td>#002</td>
+          <td>Erro de pagamento</td>
+          <td>Financeiro</td>
+          <td>Em andamento</td>
+          <td>25/06 – 12:25</td>
+        </tr>
+        <tr>
+          <td>#003</td>
+          <td>Solicitação de orça..</td>
+          <td>Financeiro</td>
+          <td>Resolvido</td>
+          <td>12/07 – 15:20</td>
+        </tr>
+        <tr>
+          <td>#004</td>
+          <td>Dúvida em atividade</td>
+          <td>Pedagógico</td>
+          <td>Aberto</td>
+          <td>15/04 – 8:04</td>
+        </tr>
+        <tr>
+          <td>#005</td>
+          <td>Falha no acesso</td>
+          <td>Técnico</td>
+          <td>Resolvido</td>
+          <td>02/04 – 16:50</td>
+        </tr>
+        <tr>
+          <td>#006</td>
+          <td>Conteúdo indisponí..</td>
+          <td>Técnico</td>
+          <td>Resolvido</td>
+          <td>11/09 – 11:20</td>
+        </tr>
+        <tr>
+          <td>#007</td>
+          <td>Esqueci a senha</td>
+          <td>Técnico</td>
+          <td>Em andamento</td>
+          <td>25/12 – 00:00</td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+
+  <aside id="painel-ticket" class="painel">
+    <div class="painel-header">
+      <h3 id="ticket-titulo">Ticket #001</h3>
+      <button id="fecharPainel">✕</button>
+    </div>
+    <div class="painel-conteudo">
+      <p><strong>Nome:</strong> André Lucas</p>
+      <p><strong>Assunto:</strong> Não consigo acessar a conta</p>
+      <p><strong>Categoria:</strong> Técnico</p>
+      <p><strong>Status:</strong> Aberto <span class="status-dot"></span></p>
+      <p><strong>Prioridade:</strong> Alta</p>
+
+      <hr>
+
+      <h4>Histórico de mensagens</h4>
+      <div class="mensagens">
+        <div class="msg cliente">
+          <span>[12/09 09:10]</span>
+          Cliente: Não consigo entrar na conta.
+        </div>
+        <div class="msg atendente">
+          <span>[12/09 09:15]</span>
+          Atendente: Tente redefinir a senha.
+        </div>
+        <div class="msg cliente">
+          <span>[12/09 09:20]</span>
+          Cliente: Consegui, muito obrigado.
+        </div>
+      </div>
+
+      <div class="input-msg">
+        <input type="text" placeholder="mensagem...">
+        <button>➤</button>
+      </div>
+    </div>
+  </aside>
+  <script src="js/script.js"></script>
+</body>
+</html>
