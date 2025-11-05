@@ -2,12 +2,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Segoe UI", Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
   background-color: #fff;
   color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0px 120px;
 }
 
 header {
@@ -16,6 +18,8 @@ header {
   align-items: center;
   padding: 15px 50px;
   border-bottom: 1px solid #eee;
+  font-size: 20px;
+  font-weight: 600;
 }
 
 .logo {
@@ -25,14 +29,7 @@ header {
 }
 
 .logo img {
-  width: 50px;
-}
-
-.perfil img {
-  width: 40px;
-  border-radius: 50%;
-  background-color: #eee;
-  padding: 5px;
+  width: 60px;
 }
 
 main {
@@ -205,4 +202,90 @@ tbody tr:hover {
   width: 32px;
   height: 32px;
   cursor: pointer;
+}
+
+.gerenciar-categorias {
+  margin-top: 30px;
+  padding: 20px 30px;
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.05);
+}
+
+.gerenciar-categorias h3 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.acoes-categoria {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.acoes-categoria input {
+  flex: 1;
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+  transition: border-color 0.2s;
+}
+
+.acoes-categoria input:focus {
+  border-color: orange;
+  outline: none;
+}
+
+.acoes-categoria button {
+  background-color: orange;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+.acoes-categoria button:hover {
+  background-color: #e69500;
+}
+
+.gerenciar-categorias ul {
+  list-style: none;
+  margin-top: 10px;
+}
+
+.gerenciar-categorias li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  background-color: #fafafa;
+  transition: background-color 0.2s;
+}
+
+.gerenciar-categorias li:hover {
+  background-color: #f1f1f1;
+}
+
+.gerenciar-categorias li button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: #888;
+  transition: color 0.2s;
+}
+
+.gerenciar-categorias li button:hover {
+  color: orange;
 }

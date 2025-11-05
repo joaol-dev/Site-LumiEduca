@@ -4,7 +4,7 @@ body {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    background-color: #f7ede2;
+    background-color: #fff;
 }
 
 header {
@@ -37,11 +37,6 @@ nav {
     align-items: center;
     justify-content: center;
     position: relative;
-}
-
-#fone { 
-    vertical-align: middle;
-    margin-bottom: 6px;
 }
 
 #link {
@@ -88,10 +83,9 @@ nav {
     display: flex;
     align-items: center;
     justify-content:space-evenly;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #eee;
     padding-bottom: 5px;        
-    margin-bottom: 20px;  
-    color: gray;    
+    margin-bottom: 20px;    
 }
 
 footer {

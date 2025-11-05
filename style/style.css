@@ -4,7 +4,7 @@ body {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    background-color: #f7ede2;
+    background-color: #fff;
 }
 
 header {
